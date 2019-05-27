@@ -1,154 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <resistance>
-    <strength>10</strength>
-    <screen_edge_strength>20</screen_edge_strength>
-  </resistance>
-  <focus>
-    <focusNew>yes</focusNew>
-    <followMouse>yes</followMouse>
-    <focusLast>yes</focusLast>
-    <underMouse>no</underMouse>
-    <focusDelay>0</focusDelay>
-    <raiseOnFocus>yes</raiseOnFocus>
-  </focus>
-  <placement>
-    <policy>smart</policy>
-    <center>yes</center>
-    <monitor>Mouse</monitor>
-    <primaryMonitor>Mouse</primaryMonitor>
-  </placement>
-  <theme>
-    <cornerRadius menu="no">4</cornerRadius>
-    <keepBorder>no</keepBorder>
-    <animateIconify>no</animateIconify>
-  </theme>
-  <keyboard>
-    <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>dmenu_run</command>
-      </action>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>st</command>
-      </action>
-    </keybind>
-    <!-- My Window Keybinds -->
-    <keybind key="W-h">
-      <action name="UnmaximizeFull"/>
-      <action name="ToggleMaximize"><direction>Vertical</direction></action>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-      </action>
-      <action name="MoveToEdgeWest"/>
-    </keybind>
-    <keybind key="W-S-h">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-	<height>50%</height>
-      </action>
-      <action name="MoveToEdgeNorth"/>
-      <action name="MoveToEdgeWest"/>
-    </keybind>
-    <keybind key="W-j">
-      <action name="UnmaximizeFull"/>
-      <action name="ToggleMaximize"><direction>Horizontal</direction></action>
-      <action name="MoveResizeTo"><height>50%</height></action>
-      <action name="MoveToEdgeSouth"/>
-    </keybind>
-    <keybind key="W-S-j">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-	<height>50%</height>
-      </action>
-      <action name="MoveToEdgeSouth"/>
-      <action name="MoveToEdgeWest"/>
-    </keybind>
-    <keybind key="W-k">
-      <action name="UnmaximizeFull"/>
-      <action name="ToggleMaximize"><direction>Horizontal</direction></action>
-      <action name="MoveResizeTo"><height>50%</height></action>
-      <action name="MoveToEdgeNorth"/>
-    </keybind>
-    <keybind key="W-S-k">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-	<height>50%</height>
-      </action>
-      <action name="MoveToEdgeNorth"/>
-      <action name="MoveToEdgeEast"/>
-    </keybind>
-    <keybind key="W-l">
-      <action name="UnmaximizeFull"/>
-      <action name="ToggleMaximize"><direction>Vertical</direction></action>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-      </action>
-      <action name="MoveToEdgeEast"/>
-    </keybind>
-    <keybind key="W-S-l">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-	<height>50%</height>
-      </action>
-      <action name="MoveToEdgeSouth"/>
-      <action name="MoveToEdgeEast"/>
-    </keybind>
-    <keybind key="W-m">
-      <action name="ToggleMaximize"/>
-    </keybind>
-    <keybind key="W-S-m">
-      <action name="Iconify"/>
-    </keybind>
-    <keybind key="W-S-q">
-      <action name="Close"/>
-    </keybind>
-    <!-- Credit addy-dclxvi --> 
-    <keybind key="W-Up">
-      <action name="UnaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>80%</width>
-        <height>80%</height>
-      </action>
-      <action name="MoveToCenter"/>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>60%</width>
-        <height>60%</height>
-      </action>
-      <action name="MoveToCenter"/>
-    </keybind>
-  <keybind key="A-Tab">
-  	<action name="NextWindow">
-    		<dialog>list</dialog>
-    		<bar>no</bar>
-  	</action>
-  </keybind>
-  <keybind key="Print">
-    <action name="Execute">
-      <command>scrot</command>
-    </action>
-  </keybind>
-</keyboard>
-  <mouse>
-    <dragThreshold>8</dragThreshold>
-    <doubleClickTime>400</doubleClickTime>
-    <screenEdgeWarpTime>0</screenEdgeWarpTime>
-    <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
-    <context name="Frame">
-    </context>
-</mouse>
-  <applications>
-  <application class="*">
-    <decor>no</decor>
-  </application>
-  </applications>
-</openbox_config>
+		<resistance>
+			<strength>10</strength>
+			<screen_edge_strength>20</screen_edge_strength>
+		</resistance>
+		<focus>
+			<focusNew>yes</focusNew>
+			<followMouse>yes</followMouse>
+			<focusLast>yes</focusLast>
+			<underMouse>no</underMouse>
+			<focusDelay>0</focusDelay>
+			<raiseOnFocus>yes</raiseOnFocus>
+		</focus>
+		<placement>
+			<policy>smart</policy>
+			<center>yes</center>
+			<monitor>Mouse</monitor>
+			<primaryMonitor>Mouse</primaryMonitor>
+		</placement>
+		<theme>
+			<cornerRadius menu="no">4</cornerRadius>
+			<keepBorder>no</keepBorder>
+			<animateIconify>no</animateIconify>
+		</theme>
+		<margins>
+  			<top>25</top>
+  			<bottom>25</bottom>
+		</margins>
+
+		<keyboard>
+			<chainQuitKey>C-g</chainQuitKey>
+			<keybind key="W-r">
+				<action name="Execute">
+					<command>dmenu_run</command>
+				</action>
+			</keybind>
+			<keybind key="W-Return">
+				<action name="Execute">
+					<command>st</command>
+				</action>
+			</keybind>
+    			<keybind key="W-h">
+      				<action name="UnmaximizeFull" />
+      				<action name="ToggleMaximize">
+					<direction>Vertical</direction>
+				</action>
+      				<action name="MoveResizeTo">
+					<x>25</x>
+        				<width>45%</width>
+				</action>
+			</keybind>
+			<keybind key="W-j">
+				<action name="UnaximizeFull" />
+				<action name="MoveResizeTo">
+					<y>Center</y>
+					<x>Center</x>
+					<width>80%</width>
+					<height>80%</height>
+				</action>
+			</keybind>
+			<keybind key="W-k">
+				<action name="UnmaximizeFull" />
+				<action name="MoveResizeTo">
+					<y>Center</y>
+					<x>Center</x>
+					<width>60%</width>
+					<height>60%</height>
+				</action>
+			</keybind>
+			<keybind key="W-l">
+				<action name="UnmaximizeFull" />
+				<action name="ToggleMaximize">
+					<direction>Vertical</direction>
+				</action>
+				<action name="MoveResizeTo">
+					<x>-25</x>
+					<width>45%</width>
+				</action>
+			</keybind>
+			<keybind key="W-S-h">
+				<action name="UnmaximizeFull" />
+				<action name="MoveResizeTo">
+					<y>+25</y>
+					<x>25</x>
+					<width>40%</width>
+					<height>40%</height>
+				</action>
+			</keybind>
+			<keybind key="W-S-j">
+				<action name="UnmaximizeFull" />
+				<action name="MoveResizeTo">
+					<y>-25</y>
+					<x>25</x>
+					<width>40%</width>
+					<height>40%</height>
+				</action>
+			</keybind>
+			<keybind key="W-S-k">
+				<action name="UnmaximizeFull" />
+				<action name="MoveResizeTo">
+					<y>-25</y>
+					<x>-25</x>
+        				<width>40%</width>
+					<height>40%</height>
+				</action>
+			</keybind>
+			<keybind key="W-S-l">
+      				<action name="UnmaximizeFull"/>
+      				<action name="MoveResizeTo">
+					<y>+25</y>
+					<x>-25</x>
+        				<width>40%</width>
+					<height>40%</height>
+      				</action>
+			</keybind>
+			<keybind key="W-m">
+				<action name="ToggleMaximize" />
+			</keybind>
+			<keybind key="W-S-m">
+				<action name="Iconify" />
+			</keybind>
+			<keybind key="W-S-q">
+				<action name="Close" />
+			</keybind>
+			<keybind key="A-Tab">
+				<action name="NextWindow">
+					<dialog>list</dialog>
+					<bar>no</bar>
+				</action>
+			</keybind>
+			<keybind key="Print">
+				<action name="Execute">
+					<command>scrot</command>
+				</action>
+			</keybind>
+		</keyboard>
+		<mouse>
+			<dragThreshold>8</dragThreshold>
+			<doubleClickTime>400</doubleClickTime>
+			<screenEdgeWarpTime>0</screenEdgeWarpTime>
+			<screenEdgeWarpMouse>false</screenEdgeWarpMouse>
+		</mouse>
+		<applications>
+			<application class="*">
+				<decor>no</decor>
+			</application>
+		</applications>
+	</openbox_config>
