@@ -16,7 +16,7 @@ Openbox dotfiles with tiling
 - [x] Grid based tiling to increase reliability 
 - [x] Tiling gaps
 - [ ] tint2 configuration 
-- [ ] Shell script installer 
+- [x] Shell script installer 
 ## Credits
 NOTE: Tiling has been rewritten, however, the key layout and location concepts are originally from these configurations.
 Tiling configuration [afraidofmusic/Openbox-Dotfiles](https://github.com/afraidofmusic/Openbox-Dotfiles) as well as 
