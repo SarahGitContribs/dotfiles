@@ -1,38 +1,21 @@
 #!/bin/bash
-openbox=~/.config/openbox
-rc=~/.config/openbox/rc.xml
-autostart=~/.config/openbox/autostart
-compton=~/.config/compton.conf
-if [ -e  $rc ]; then 
-	read -p "Backup and replace rc.xml (y/n)?" option
+rc=config/openbox/rc.xml
+autostart=config/openbox/autostart
+compton=config/compton.conf
+if [ ! -d ~/.config/openbox ]; then 
+mkdir ~/.config/openbox
+fi
+install () {
+if [ -e ~/.$1 ]; then 
+	read -p "Backup and replace ~/.$1 (y/n)?" option
 	if [ "$option" = "y" ]; then
-		mv $rc $rc.backup
-		mv config/openbox/rc.xml $rc
-		echo "Done."
+		mv ~/.$1 ~/.$1.backup
+		mv $1 ~/.$1
 	fi
 	else
-		mkdir -p $openbox
-		mv config/openbox/rc.xml $openbox
+		mv $1 ~/.$1
 fi
-if [ -e $autostart ]; then 
-	read -p "Backup and replace autostart? (y/n)?" option
-	if [ "$option" = "y" ]; then
-		mv $autostart $autostart.backup
-		mv config/openbox/autostart $autostart
-		echo "Done."
-	fi
-	else
-		mkdir -p $openbox
-		mv config/openbox/autostart $openbox
-fi
-if [ -e $compton ]; then
-	read -p "Backup and replace compton.conf (y/n)?" option
-	if [ "$option" = "y" ]; then 
-		mv $compton $compton.backup
-		mv config/compton.conf $compton
-	fi
-	else
-		mv config/compton.conf $compton
-fi
-
-
+} 
+install $rc openbox
+install $autostart openbox
+install $compton
