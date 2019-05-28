@@ -3,7 +3,7 @@ rc=config/openbox/rc.xml
 autostart=config/openbox/autostart
 compton=config/compton.conf
 if [ ! -d ~/.config/openbox ]; then 
-mkdir ~/.config/openbox
+	mkdir ~/.config/openbox
 fi
 install () {
 if [ -e ~/.$1 ]; then 
@@ -16,6 +16,6 @@ if [ -e ~/.$1 ]; then
 		mv $1 ~/.$1
 fi
 } 
-install $rc openbox
-install $autostart openbox
+install $rc
+install $autostart
 install $compton
