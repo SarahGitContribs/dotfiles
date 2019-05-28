@@ -23,11 +23,6 @@
 			<keepBorder>no</keepBorder>
 			<animateIconify>no</animateIconify>
 		</theme>
-		<margins>
-  			<top>25</top>
-  			<bottom>25</bottom>
-		</margins>
-
 		<keyboard>
 			<chainQuitKey>C-g</chainQuitKey>
 			<keybind key="W-r">
@@ -42,11 +37,10 @@
 			</keybind>
     			<keybind key="W-h">
       				<action name="UnmaximizeFull" />
-      				<action name="ToggleMaximize">
-					<direction>Vertical</direction>
-				</action>
       				<action name="MoveResizeTo">
+					<y>Center</y>
 					<x>25</x>
+					<height>90%</height>
         				<width>45%</width>
 				</action>
 			</keybind>
@@ -70,11 +64,10 @@
 			</keybind>
 			<keybind key="W-l">
 				<action name="UnmaximizeFull" />
-				<action name="ToggleMaximize">
-					<direction>Vertical</direction>
-				</action>
 				<action name="MoveResizeTo">
+					<y>Center</y>
 					<x>-25</x>
+					<height>90%</height>
 					<width>45%</width>
 				</action>
 			</keybind>
