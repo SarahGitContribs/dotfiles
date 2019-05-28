@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
-		<resistance>
-			<strength>10</strength>
-			<screen_edge_strength>20</screen_edge_strength>
-		</resistance>
 		<focus>
 			<focusNew>yes</focusNew>
 			<followMouse>yes</followMouse>
@@ -21,10 +17,8 @@
 		<theme>
 			<cornerRadius menu="no">4</cornerRadius>
 			<keepBorder>no</keepBorder>
-			<animateIconify>no</animateIconify>
 		</theme>
 		<keyboard>
-			<chainQuitKey>C-g</chainQuitKey>
 			<keybind key="W-r">
 				<action name="Execute">
 					<command>dmenu_run</command>
@@ -40,7 +34,7 @@
       				<action name="MoveResizeTo">
 					<y>Center</y>
 					<x>25</x>
-					<height>90%</height>
+					<height>96%</height>
         				<width>45%</width>
 				</action>
 			</keybind>
@@ -67,7 +61,7 @@
 				<action name="MoveResizeTo">
 					<y>Center</y>
 					<x>-25</x>
-					<height>90%</height>
+					<height>96%</height>
 					<width>45%</width>
 				</action>
 			</keybind>
@@ -76,8 +70,8 @@
 				<action name="MoveResizeTo">
 					<y>+25</y>
 					<x>25</x>
-					<width>40%</width>
-					<height>40%</height>
+					<width>45%</width>
+					<height>45%</height>
 				</action>
 			</keybind>
 			<keybind key="W-S-j">
@@ -85,8 +79,8 @@
 				<action name="MoveResizeTo">
 					<y>-25</y>
 					<x>25</x>
-					<width>40%</width>
-					<height>40%</height>
+					<width>45%</width>
+					<height>45%</height>
 				</action>
 			</keybind>
 			<keybind key="W-S-k">
@@ -94,8 +88,8 @@
 				<action name="MoveResizeTo">
 					<y>-25</y>
 					<x>-25</x>
-        				<width>40%</width>
-					<height>40%</height>
+        				<width>45%</width>
+					<height>45%</height>
 				</action>
 			</keybind>
 			<keybind key="W-S-l">
@@ -103,8 +97,8 @@
       				<action name="MoveResizeTo">
 					<y>+25</y>
 					<x>-25</x>
-        				<width>40%</width>
-					<height>40%</height>
+        				<width>45%</width>
+					<height>45%</height>
       				</action>
 			</keybind>
 			<keybind key="W-m">
@@ -139,4 +133,4 @@
 				<decor>no</decor>
 			</application>
 		</applications>
-	</openbox_config>
+</openbox_config>
