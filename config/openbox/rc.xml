@@ -2,7 +2,7 @@
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
 		<focus>
 			<focusNew>yes</focusNew>
-			<followMouse>yes</followMouse>
+			<followMouse>no</followMouse>
 			<focusLast>yes</focusLast>
 			<underMouse>no</underMouse>
 			<focusDelay>0</focusDelay>
@@ -121,12 +121,38 @@
 					<command>scrot</command>
 				</action>
 			</keybind>
+
 		</keyboard>
 		<mouse>
 			<dragThreshold>8</dragThreshold>
 			<doubleClickTime>400</doubleClickTime>
 			<screenEdgeWarpTime>0</screenEdgeWarpTime>
 			<screenEdgeWarpMouse>false</screenEdgeWarpMouse>
+			<context name="Frame">
+      				<mousebind button="A-Left" action="Press">
+        				<action name="Focus"/>
+        				<action name="Raise"/>
+				</mousebind>
+			</context>
+    			<context name="Client">
+      				<mousebind button="Left" action="Press">
+        				<action name="Focus"/>
+        				<action name="Raise"/>
+				</mousebind>
+			</context>
+			<context name="Titlebar">
+      				<mousebind action="Press" button="Left">
+        				<action name="Focus"/>
+        				<action name="Raise"/>
+				</mousebind>
+			</context>
+			<context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
+      				<mousebind action="Press" button="Left">
+        				<action name="Focus"/>
+        				<action name="Raise"/>
+        				<action name="Unshade"/>
+				</mousebind>
+			</context>
 		</mouse>
 		<applications>
 			<application class="*">
