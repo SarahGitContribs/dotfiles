@@ -8,7 +8,6 @@ Openbox dotfiles with tiling
 * Window tiling with vim keys and gaps
 * Openbox configuration menu removed
 * Removed virtual desktop keys
-* Scroll over window to focus
 * Compton configuration with shadows
 * Removed border around window when selected in alt-tab menu
 * openbox-patched round corners enabled
