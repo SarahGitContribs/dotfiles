@@ -15,7 +15,9 @@ if [ -e ~/.$1 ]; then
 		mv $1 ~/.$1
 fi
 }
+directory config/tint2
 directory config/openbox
+install config/tint2/tint2rc
 install config/openbox/rc.xml
 install config/openbox/autostart
 install config/compton.conf

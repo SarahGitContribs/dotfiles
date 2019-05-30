@@ -1,0 +1,15 @@
+panel_items = TC
+panel_size = 100%
+panel_margin = 0 0
+panel_position = top center horizontal
+task_align = left
+task_text = 1
+task_centered = 1
+task_icon = 0
+task_maximum_size = 100 20
+task_font = Ubuntu 10
+task_font_color = #ffffff 100
+taskbar_padding = 10 0 0
+time1_format = %I:%M %p
+clock_font_color = #ffffff 100
+clock_padding = 10
